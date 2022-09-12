@@ -1,6 +1,6 @@
 settings:
   title: 'Status Page'
-  url: 'https://status-page.eidam.dev' # used for Slack messages
+  url: 'https://dashboard.letnet.cc' # used for Slack messages
   logo: logo-192x192.png # image in ./public/ folder
   daysInHistogram: 90 # number of days you want to display in histogram
   collectResponseTimes: true # collects avg response times from CRON locations
@@ -15,15 +15,7 @@ settings:
   dayInHistogramNotOperational: ' incident(s)' # xx incident(s) recorded
 
 monitors:
-  - id: www.google.de
-    name: www.google.de
-    description: 'Built for anything connected to the Internet.'
-    url: 'https://www.google.de'
-    method: GET
-    expectStatus: 200
-    linkable: false # allows the title to be a link, default=true
-    
-  - id: letnet.cc
+      - id: letnet.cc
     name: letnet.cc
     description: 'Dashboard providing Links to all my services'
     url: 'https://letnet.cc/'
